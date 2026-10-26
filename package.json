@@ -1,0 +1,46 @@
+{
+  "name": "imac-rag",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/server.ts",
+    "start": "node --env-file=.env dist/src/server.js",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "db:setup": "tsx --env-file=.env scripts/db-setup.ts",
+    "check:gemini": "tsx --env-file=.env scripts/check-gemini.ts",
+    "extract": "tsx --env-file=.env scripts/extract.ts",
+    "structure": "tsx scripts/structure.ts",
+    "tables": "tsx scripts/tables.ts",
+    "charts": "tsx --env-file=.env scripts/charts.ts",
+    "chunk": "tsx scripts/chunk.ts",
+    "pipeline": "npm run extract && npm run structure && npm run tables && npm run charts && npm run chunk && npm run ingest",
+    "ingest": "tsx --env-file=.env scripts/ingest.ts",
+    "search": "tsx --env-file=.env scripts/search.ts",
+    "eval": "tsx --env-file=.env scripts/eval.ts",
+    "ask": "tsx --env-file=.env scripts/ask.ts",
+    "eval:answers": "tsx --env-file=.env scripts/eval-answers.ts",
+    "chat": "tsx --env-file=.env scripts/chat.ts",
+    "eval:rewrite": "tsx --env-file=.env scripts/eval-rewrite.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.29.0",
+    "@huggingface/transformers": "^4.3.0",
+    "express": "^5.3.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.4.299",
+    "pg": "^8.23.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.5",
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

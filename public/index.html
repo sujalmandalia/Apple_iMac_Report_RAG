@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iMac Environmental Report Chat</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <button class="new-chat" id="newChat" type="button">+ New chat</button>
+        <h2>Conversations</h2>
+        <ul class="conversations" id="conversations"></ul>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button class="menu" id="menu" type="button" aria-label="Toggle conversations">☰</button>
+          <div>
+            <h1>iMac Product Environmental Report · October 2024</h1>
+            <p class="subtitle">Answers come only from Apple's report, with page citations and the endnotes behind each figure. <a href="/report.pdf" target="_blank" rel="noopener">Open the PDF</a></p>
+          </div>
+        </header>
+
+        <section class="messages" id="messages" aria-live="polite">
+          <div class="empty" id="empty">
+            <p>Try asking:</p>
+            <div class="suggestions">
+              <button type="button">What are the key environmental highlights of this report?</button>
+              <button type="button">What is the iMac's carbon footprint, and where do the emissions come from?</button>
+              <button type="button">How much power does the iMac use when idle?</button>
+              <button type="button">How did Apple reduce emissions from the 445 kg baseline?</button>
+              <button type="button">Which iMac model has recycled copper in the thermal module?</button>
+              <button type="button">What use period does the carbon footprint assume?</button>
+            </div>
+          </div>
+        </section>
+
+        <form class="composer" id="composer">
+          <textarea id="input" rows="1" placeholder="Ask about the report…" maxlength="1000" required></textarea>
+          <button id="send" type="submit">Send</button>
+        </form>
+      </main>
+
+      <aside class="source-panel" id="sourcePanel" hidden>
+        <div class="source-panel-head">
+          <h2 id="sourceTitle">Source</h2>
+          <button id="closeSource" type="button" aria-label="Close source">×</button>
+        </div>
+        <div id="sourceBody"></div>
+      </aside>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

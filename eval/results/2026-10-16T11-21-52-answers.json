@@ -1,0 +1,55 @@
+[
+  {
+    "id": "c03",
+    "category": "chart",
+    "question": "How much did low-carbon electricity cut manufacturing emissions?",
+    "reference": "About 22 kg on the chart; the text says supplier low-carbon electricity reduced product emissions by 5 percent.",
+    "answer": "According to the report, low-carbon electricity solutions implemented by suppliers have reduced total product emissions for iMac (two ports) with 256GB by 5 percent [Progress toward carbon neutral, p. 2][Chart, p. 2]. In terms of total carbon footprint reductions, low-carbon electricity accounts for an estimated reduction of about 22 kg CO2e [Chart, p. 2].",
+    "model": "gemini-3.6-flash",
+    "refusalCorrect": true,
+    "numbersFound": 1,
+    "headlineFound": true,
+    "missingNumbers": [],
+    "unverifiedNumbers": [],
+    "grounded": true,
+    "invalidCitations": [],
+    "citedRelevantSource": true,
+    "ms": 7125
+  },
+  {
+    "id": "x01",
+    "category": "lookup",
+    "question": "Show me table 3",
+    "reference": "Power consumption for iMac.",
+    "answer": "Here is Table 3 from the iMac Product Environmental Report [Table, p. 12]:\n\n**Power consumption for iMac**\n\n| Mode | 100V | 115V | 230V |\n| --- | --- | --- | --- |\n| Off | 0.27W | 0.27W | 0.29W |\n| Sleep | 0.56W | 0.57W | 0.59W |\n| Idle—Display On | 20.5W | 20.6W | 20.9W |\n| Power adapter, no load | 0.10W | 0.10W | 0.12W |\n| Power adapter efficiency | 91.1% | 91.5% | 91.9% |\n\n*(Note: Energy consumption and efficiency values are based on the ENERGY STAR Program Requirements for Computers, tested with the 143W Power Adapter, AC Cable (1m), and DC Cable (2m)) [Endnote 18, p. 12].*",
+    "model": "gemini-3.6-flash",
+    "refusalCorrect": true,
+    "numbersFound": null,
+    "headlineFound": null,
+    "missingNumbers": [],
+    "unverifiedNumbers": [
+      "3"
+    ],
+    "grounded": true,
+    "invalidCitations": [],
+    "citedRelevantSource": true,
+    "ms": 7236
+  },
+  {
+    "id": "v01",
+    "category": "variant",
+    "question": "How does the four-port iMac's footprint compare with the two-port model?",
+    "reference": "391 kg CO2e (four ports, 512GB) vs 346 kg CO2e (two ports, 256GB).",
+    "answer": "The total carbon footprint for the iMac (four ports) 512GB configuration is 391 kg CO2e [Table, p. 10], while the total product footprint for the iMac (two ports) 256GB configuration is 346 kg CO2e [Table, p. 10]. \n\nComparing the two specific configurations listed, the iMac (four ports) 512GB model's footprint is 45 kg CO2e higher than the iMac (two ports) 256GB model [Table, p. 10].",
+    "model": "gemini-3.6-flash",
+    "refusalCorrect": true,
+    "numbersFound": 1,
+    "headlineFound": true,
+    "missingNumbers": [],
+    "unverifiedNumbers": [],
+    "grounded": true,
+    "invalidCitations": [],
+    "citedRelevantSource": true,
+    "ms": 5927
+  }
+]

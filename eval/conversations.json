@@ -1,0 +1,22 @@
+[
+  { "history": [["How much power does the iMac use when idle at 230V?", "When idle with the display on at 230V, the iMac uses 20.9W."]],
+    "message": "What about in sleep mode?", "mustInclude": ["sleep"] },
+  { "history": [["How much power does the iMac use when idle at 230V?", "When idle with the display on at 230V, the iMac uses 20.9W."]],
+    "message": "And at 115V?", "mustInclude": ["115V", "idle"] },
+  { "history": [["What is the total carbon footprint of the two-port iMac?", "The iMac (two ports) 256GB has a total product footprint of 346 kg CO2e."]],
+    "message": "How does that compare with the four-port model?", "mustInclude": ["four", "two"] },
+  { "history": [["What is the total carbon footprint of the two-port iMac?", "The iMac (two ports) 256GB has a total product footprint of 346 kg CO2e."]],
+    "message": "What assumptions is that number based on?", "mustInclude": ["carbon footprint"] },
+  { "history": [["How much recycled content does the iMac contain?", "The iMac contains more than 15 percent recycled content."]],
+    "message": "How is that calculated?", "mustInclude": ["recycled content"] },
+  { "history": [["Does Apple use recycled copper in the iMac?", "Yes, 100 percent recycled copper in multiple printed circuit boards and in thermal module components."]],
+    "message": "Is that true for both models?", "mustInclude": ["copper"] },
+  { "history": [["What were the iMac's baseline emissions?", "The business-as-usual baseline was 445 kg; Apple reduced it by 99 kg to 346 kg."]],
+    "message": "Where did the biggest reduction come from?", "mustInclude": ["reduction"] },
+  { "history": [["Is the iMac packaging plastic-free?", "Yes, it is 100 percent fiber-based except for inks, coatings and adhesives."]],
+    "message": "How much of it is recycled?", "mustInclude": ["packaging", "recycled"] },
+  { "history": [["What is the iMac's carbon footprint?", "346 kg CO2e for the two-port 256GB model."]],
+    "message": "What does endnote 7 say?", "mustInclude": ["endnote 7"], "standalone": true },
+  { "history": [["How much power does the iMac use when idle at 230V?", "20.9W."]],
+    "message": "thanks!", "kind": "chitchat" }
+]
